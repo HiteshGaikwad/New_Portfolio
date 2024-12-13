@@ -14,8 +14,8 @@ const Hero = () => {
           {/* top left */}
           <div className=" w-full flex sm:justify-between max-sm:justify-center max-sm:align-middle max-sm:pt-1">
             <div className="flex h-[65%] flex-col pl-2 pt-2 max-sm:hidden">
-              <div className="mt-1 w-12 h-12 bg-blue-600 rounded-full"></div>
-              <div className="h-[135px] w-[2px] bg-blue-600 m-auto"></div>
+              <div className="mt-8 w-4 h-4 bg-blue-800 rounded-full"></div>
+              <div className="h-[135px] w-[3px] bg-gradient-to-b from-blue-800 m-auto"></div>
             </div>
 
             <div className=" sm:hidden pt-3 pr-2">

@@ -6,7 +6,7 @@ import { fadeIn } from "./motion";
 
 const ProjectCard = () => {
   return (
-    <Tilt className="shadow-lg rounded-xl w-64 h-[320px] p-2">
+    <Tilt className="shadow-lg rounded-xl sm:w-64 max-sm:w-[45%] max-sm:h-[220px] sm:h-[320px] p-2">
       <motion.div variants={fadeIn("right", "spring", 0.5, 0.75)}>
         <div
           options={{
@@ -15,9 +15,13 @@ const ProjectCard = () => {
             speed: 450,
           }}
         >
-          <img src={img} alt="" className="w-72 h-40 rounded-xl" />
+          <img
+            src={img}
+            alt=""
+            className="sm:w-72 max-sm:w-full max-sm:h-24 sm:h-40 rounded-xl"
+          />
           <h2>title</h2>
-          <p className="text-sm">
+          <p className="sm:text-sm max-sm:text-xs">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's
           </p>
