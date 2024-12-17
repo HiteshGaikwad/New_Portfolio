@@ -46,3 +46,82 @@ export const skills = [
     icon: GitHub,
   },
 ];
+
+export const experiences = [
+  {
+    title: "React.js Developer",
+    company_name: "Starbucks",
+    // icon: starbucks,
+    iconBg: "#383E56",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React Native Developer",
+    company_name: "Tesla",
+    // icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    company_name: "Shopify",
+    // icon: shopify,
+    iconBg: "#383E56",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    company_name: "Meta",
+    // icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
+
+export const education = [
+  {
+    title: "BE Mechanical",
+    college_name: "Yadavrao tasgaonkar Institute of Engineering & Technology",
+    date: "2015-2019",
+    initials: "BE",
+    percent: "6.75 CGPA",
+  },
+  {
+    title: "Higher Secondary Certificate (HSC)",
+    college_name: "SDSM College",
+    date: "2013-2015",
+    initials: "12th",
+    percent: "61%",
+  },
+  {
+    title: "Secondary School Certificate (SSC)",
+    college_name: "Jawahar Navodaya Vidyalaya Palghar",
+    date: "2013",
+    initials: "10th",
+    percent: "7.8 CGPA",
+  },
+];

@@ -5,10 +5,30 @@ import { FaGithub } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
+import download_icon from "../assets/Images/download.png";
 
 const Hero = () => {
   return (
     <section className="w-full sm:h-screen relative top-40 max-sm:top-24 sm:top-20 py-2">
+      <div
+        className="hidden sm:flex fixed z-50 right-5 "
+        title="Download Resume"
+      >
+        {" "}
+        {/* Download Resume */}
+        <a
+          href="https://drive.google.com/uc?export=download&id=196V8Tc2kxoYidpVsg1ZkgA0yxarr2zgv"
+          download="HiteshGaikwad-resume"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={download_icon}
+            alt="downlaod icon"
+            className="w-14 h-14 drop-shadow-[5px_5px_8px_red] animate-bounce	"
+          />
+        </a>
+      </div>
+
       <div className="sm:w-2/3 flex flex-col align-middle sm:justify-center justify-end sm:h-full m-auto sm:px-3 ">
         <div className="flex justify-center max-sm:flex-col-reverse sm:h-1/2 align-middle w-full">
           {/* top left */}
@@ -23,19 +43,33 @@ const Hero = () => {
             </div>
             <div className="sm:text-start sm:h-[60%] flex items-end sm:pb-10 sm:w-full  sm:m-auto max-sm:flex max-sm:justify-center max-sm:align-middle max-sm:pt-1 ">
               <div>
-                {/* Hitesh Gaikwad */}
-                Full Name
+                <span className="font-semibold text-xl">Hitesh Gaikwad</span>
+                {/* Full Name */}
                 <br />
                 Software Developer
                 {/* social media */}
                 <div className="flex text-xl gap-2 pt-1">
-                  <a href="#">
+                  <a
+                    href="https://github.com/HiteshGaikwad"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FaGithub />
                   </a>
-                  <a href="#" className="text-orange-400">
+                  <a
+                    href="https://leetcode.com/u/Hitesh_gaikwad03/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-orange-400"
+                  >
                     <SiLeetcode />
                   </a>
-                  <a href="#" className="text-green-600 text-2xl">
+                  <a
+                    href="https://www.geeksforgeeks.org/user/gaikwadhitesh03/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-green-600 text-2xl"
+                  >
                     <SiGeeksforgeeks />
                   </a>
                 </div>
@@ -66,6 +100,7 @@ const Hero = () => {
               </div>
             </q>
           </div>
+          <div id="Experience"></div>
         </div>
       </div>
     </section>

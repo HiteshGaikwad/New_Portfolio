@@ -1,15 +1,17 @@
 import React from "react";
 import ProjectCard from "./utils/ProjectCard";
+import { styles } from "./style";
+import SectionWrapper from "./hoc/SectionWrapper";
 
 const Projects = () => {
   return (
-    <section
-      id="Projects"
-      className="w-full  relative  max-sm:px-2 max-sm:mt-28"
-    >
-      <div className="sm:w-2/3  flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto sm:px-3 ">
-        <h1 className="text-4xl font-semibold font-sans">Projects</h1>
-        <div className="w-full h-full  mt-4 p-auto flex flex-1 gap-5 flex-wrap justify-evenly">
+    <section className="max-sm:mt-1">
+      <div
+        className={`sm:${styles.paddingX} max-sm:px-0 flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto `}
+      >
+        {/* <h1 className="text-4xl font-semibold font-sans">Projects</h1> */}
+        <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
+        <div className="w-full h-full mt-5  flex flex-1 gap-5 flex-wrap justify-evenly sm:px-5">
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
@@ -17,8 +19,9 @@ const Projects = () => {
           <ProjectCard />
         </div>
       </div>
+      <div id="Skills"></div>
     </section>
   );
 };
 
-export default Projects;
+export default SectionWrapper(Projects, "projects");
