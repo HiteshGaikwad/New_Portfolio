@@ -6,8 +6,8 @@ import { styles } from "./style";
 
 const Skills = () => {
   return (
-    <section className="w-full max-sm:h-full max-sm:px-2 ">
-      <div className="sm:w-2/3 flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto sm:px-3 ">
+    <section className="w-full max-sm:h-full max-sm:px-2 max-md:pr-0">
+      <div className="md:w-2/3 flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto sm:px-3 ">
         {/* <h1 className="text-4xl font-semibold font-sans">Skills</h1> */}
         <h2 className={`${styles.sectionHeadText} text-center`}>Skills</h2>
 

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "./style";
-import { education, experiences } from "./utils/constants";
+import { education } from "./utils/constants";
 import SectionWrapper from "./hoc/SectionWrapper";
 import { textVariant } from "./utils/motion";
 
@@ -29,7 +29,7 @@ const ExperienceCard = ({ item }) => {
             alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"
           /> */}
-          <div className=" font-bold text-2xl text-center">
+          <div className=" font-bold max:md-text-2xl text-center">
             {item?.initials}
           </div>
         </div>
@@ -64,14 +64,14 @@ const ExperienceCard = ({ item }) => {
 const Education = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="mt-5 max-md:mx-4">
         {/* <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p> */}
         <h2 className={`${styles.sectionHeadText} text-center`}>Education</h2>
       </motion.div>
 
-      <div className="mt-10 flex flex-col">
+      <div className="mt-5 flex flex-col max-md:mx-4">
         <VerticalTimeline>
           {education.map((item, index) => (
             <ExperienceCard key={`education-${index}`} item={item} />
@@ -80,7 +80,6 @@ const Education = () => {
       </div>
       <div id="Contact"></div>
     </>
-    
   );
 };
 

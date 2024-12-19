@@ -5,7 +5,7 @@ import SectionWrapper from "./hoc/SectionWrapper";
 
 const Projects = () => {
   return (
-    <section className="max-sm:mt-1">
+    <section className="max-sm:mt-1 max-md:mx-2">
       <div
         className={`sm:${styles.paddingX} max-sm:px-0 flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto `}
       >

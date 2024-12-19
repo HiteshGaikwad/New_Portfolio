@@ -32,33 +32,38 @@ const Experience = () => {
   return (
     <section
       // id="Experience"
-      className=" sm:h-screen max-sm:top-20 max-sm:px-2 sm:px-8 max-sm:mt-20"
+      className="md:mx-2 md:h-screen max-sm:top-20 max-sm:px-2 md:px-8 max-sm:mt-20 max-md:mx-3"
     >
-      <div className=" flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto sm:px-3 ">
+      <div className=" flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto md:px-3 ">
         {/* <h1 className="text-4xl font-semibold font-sans">Experience</h1> */}
         <h2 className={`${styles.sectionHeadText} text-center`}>Experience</h2>
-        <div className="w-full flex h-5/6 sm:align-bottom sm:mt-5 max-sm:mt-5 max-sm:flex-col gap-5">
+        <div className="w-full flex h-5/6 sm:align-bottom sm:mt-5 max-sm:mt-5 max-sm:flex-col md:gap-5 max-md:gap-2">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
             className="sm:w-1/2 max-sm:w-full max-sm:px-3  py-3 px-2"
           >
-            <h2 className="flex text-center gap-2 font-semibold text-xl ">
+            <h2 className="flex text-center gap-2 font-semibold md:text-xl ">
               {/* <MdOutlineCorporateFare className="text-xl " />  */}
               <img
                 src={we3_logo}
                 alt="We3 tech logo"
-                className="sm:w-10 w-8 h-8 sm:h-10 rounded-full shadow-lg p-1"
+                className="md:w-10 w-7 h-7 md:h-10 rounded-full shadow-lg p-1"
               />
-              <span className="h-full mt-auto">We3 Tech Works</span>
+              <span className="h-full mt-auto max-md:text-[18px]">
+                We3 Tech Works
+              </span>
             </h2>
-            <h3 className="flex gap-2 mt-2">
-              <RiComputerLine className="text-2xl mx-2" />{" "}
-              <span className="font-semibold">Software Developer </span>
+            <h3 className="flex gap-2 mt-2 max-md:ml-1">
+              <RiComputerLine className="md:text-2xl max-md:text-xl md:mx-2" />{" "}
+              <span className="font-semibold max-md:text-[15px]">
+                Software Developer{" "}
+              </span>
             </h3>
-            <h4 className="flex gap-2 mt-2">
-              <FaMapPin className="text-2xl mx-2" /> March 2024 - Present
+            <h4 className="flex gap-2 mt-2 max-md:mx-1">
+              <FaMapPin className="md:text-2xl max-md:text-xl md:mx-2" />
+              <span className="max-md:text-[14px]">March 2024 - Present </span>
             </h4>
-            <ul className="list-disc pl-2 pt-2">
+            <ul className="list-disc pl-2 pt-2 max-md:text-[13px]">
               <li>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's.
@@ -78,7 +83,7 @@ const Experience = () => {
           </motion.div>
           <motion.div
             variants={slideIn("right", "tween", 0.2, 1)}
-            className="sm:w-[40%] max-sm:w-full max-sm:px-3  py-3 px-2"
+            className="md:w-[40%] max-md:w-1/2 max-sm:w-full max-sm:px-3 max-md:pt-10 max-sm:pt-1  md:py-3 px-2"
           >
             <img
               className="sm:w-full w-32 max-sm:w-full max-sm:h-72  sm:h-[70%] rounded-lg"

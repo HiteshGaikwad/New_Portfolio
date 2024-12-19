@@ -9,7 +9,7 @@ import download_icon from "../assets/Images/download.png";
 
 const Hero = () => {
   return (
-    <section className="w-full sm:h-screen relative top-40 max-sm:top-24 sm:top-20 py-2">
+    <section className="w-full sm:h-screen relative top-40 max-sm:top-24 max-md:top-[5rem] md:top-20 py-2 ">
       <div
         className="hidden sm:flex fixed z-50 right-5 "
         title="Download Resume"
@@ -29,13 +29,13 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="sm:w-2/3 flex flex-col align-middle sm:justify-center justify-end sm:h-full m-auto sm:px-3 ">
-        <div className="flex justify-center max-sm:flex-col-reverse sm:h-1/2 align-middle w-full">
+      <div className="md:w-2/3 flex flex-col align-middle sm:justify-center justify-end sm:h-full m-auto sm:px-3 ">
+        <div className="flex justify-center max-sm:flex-col-reverse md:h-1/2 align-middle w-full max-sm:mx-0 max-md:mx-5">
           {/* top left */}
           <div className=" w-full flex sm:justify-between max-sm:justify-center max-sm:align-middle max-sm:pt-1">
-            <div className="flex h-[65%] flex-col pl-2 pt-2 max-sm:hidden">
+            <div className="flex h-[65%] flex-col pl-2 md:pt-2 pt-1 max-sm:hidden">
               <div className="mt-8 w-4 h-4 bg-blue-800 rounded-full"></div>
-              <div className="h-[135px] w-[3px] bg-gradient-to-b from-blue-800 m-auto"></div>
+              <div className="md:h-[135px] max-md:h-[100px] w-[3px] bg-gradient-to-b from-blue-800 m-auto"></div>
             </div>
 
             <div className=" sm:hidden pt-3 pr-2">
@@ -77,18 +77,18 @@ const Hero = () => {
             </div>
           </div>
           {/* top right */}
-          <div className="w-full pl-2 sm:py-2 max-sm:pr-2 max-sm:flex max-sm:justify-center max-sm:align-middle">
-            <div className="sm:h-full">
+          <div className="w-full pl-2 md:py-2 max-md:py-5 max-sm:py-2 max-sm:pr-2 max-sm:flex max-sm:justify-center max-sm:align-middle">
+            <div className="md:h-full">
               <img
-                className="rounded-full sm:h-full max-sm:h-48"
+                className="rounded-full md:h-full max-md:h-48"
                 src={userLogo}
                 alt="User"
               />
             </div>
           </div>
         </div>
-        <div className=" sm:h-1/2 w-full sm:py-3 sm:px-2">
-          <div className="p-5">
+        <div className=" sm:h-1/2 w-full sm:py-3 md:px-2 max-md:px-5">
+          <div className="md:p-5">
             <q className="text-xl font-bold">
               <div className="text-[16px] font-medium inline">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
