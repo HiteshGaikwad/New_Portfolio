@@ -23,13 +23,13 @@ const ExperienceCard = ({ item }) => {
       // date={experience.date}
       // iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
+        <div className="flex justify-center items-center w-full h-full ">
           {/* <img
             src={experience.icon}
             alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"
           /> */}
-          <div className=" font-bold max:md-text-2xl text-center">
+          <div className=" font-bold max-md:text-sm md:text-lg  text-center ">
             {item?.initials}
           </div>
         </div>

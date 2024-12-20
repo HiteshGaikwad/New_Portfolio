@@ -32,7 +32,7 @@ const Experience = () => {
   return (
     <section
       // id="Experience"
-      className="md:mx-2 md:h-screen max-sm:top-20 max-sm:px-2 md:px-8 max-sm:mt-20 max-md:mx-3"
+      className="md:mx-2  md:h-screen max-sm:top-20 max-sm:px-2 md:px-8 max-sm:mt-20 max-md:mx-3"
     >
       <div className=" flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto md:px-3 ">
         {/* <h1 className="text-4xl font-semibold font-sans">Experience</h1> */}

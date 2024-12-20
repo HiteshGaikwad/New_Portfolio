@@ -9,7 +9,7 @@ import download_icon from "../assets/Images/download.png";
 
 const Hero = () => {
   return (
-    <section className="w-full sm:h-screen relative top-40 max-sm:top-24 max-md:top-[5rem] md:top-20 py-2 ">
+    <section className="w-full bg-[url('./assets/Images/black-img.jpg')] bg-no-repeat bg-center bg-cover sm:h-screen relative top-40 max-sm:top-24 max-md:top-[5rem] md:top-20 py-2 ">
       <div
         className="hidden sm:flex fixed z-50 right-5 "
         title="Download Resume"
@@ -29,7 +29,7 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="md:w-2/3 flex flex-col align-middle sm:justify-center justify-end sm:h-full m-auto sm:px-3 ">
+      <div className="md:w-[75%] flex flex-col align-middle sm:justify-center justify-end sm:h-full m-auto sm:px-3 ">
         <div className="flex justify-center max-sm:flex-col-reverse md:h-1/2 align-middle w-full max-sm:mx-0 max-md:mx-5">
           {/* top left */}
           <div className=" w-full flex sm:justify-between max-sm:justify-center max-sm:align-middle max-sm:pt-1">

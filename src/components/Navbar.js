@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full h-20 bg-black fixed top-0 z-50">
+    <header className="w-full h-20 fixed top-0 z-50">
       <div className="md:w-2/3 max-md:w-[90%] flex align-middle sm:justify-center justify-end h-full m-auto sm:px-3">
         <div
           className={`w-full m-auto flex max-sm:flex-col sm:h-full  sm:align-middle sm:justify-center sm:text-white ${
@@ -31,7 +31,7 @@ const Navbar = () => {
               <img
                 src={download_icon}
                 alt="downlaod icon"
-                className="w-14 h-14 drop-shadow-[5px_5px_8px_red] animate-bounce	"
+                className="w-14 h-14 drop-shadow-[5px_5px_8px_white] animate-bounce"
               />
             </a>
           </div>

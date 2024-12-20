@@ -1,27 +1,32 @@
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
-    letter-spacing: .1rem;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
 }
 
-a:hover{
-    color: rgb(68, 138, 230);
-    text-decoration: underline;
+a:hover {
+  color: rgb(68, 138, 230);
+  text-decoration: underline;
 }
 
 .octagon {
-    width: 80px;
-    height: 80px;
-    aspect-ratio: 1;
-    --o:calc(50%*tan(-22.5deg));
-    clip-path: polygon(
-      var(--o) 50%,
-      50% var(--o),
-      calc(100% - var(--o)) 50%,
-      50% calc(100% - var(--o))
-    );
-    background: #3B8686;
-  }
+  width: 80px;
+  height: 80px;
+  aspect-ratio: 1;
+  --o: calc(50% * tan(-22.5deg));
+  clip-path: polygon(
+    var(--o) 50%,
+    50% var(--o),
+    calc(100% - var(--o)) 50%,
+    50% calc(100% - var(--o))
+  );
+  background: #3b8686;
+}
+
+.vertical-timeline-element-icon {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}

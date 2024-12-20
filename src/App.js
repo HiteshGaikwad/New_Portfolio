@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="w-full h-screen relative pb-7">
+    <div className="w-full bg-black text-white relative pb-7  ">
       {/* <div> */}
       <Navbar />
       <Hero />
