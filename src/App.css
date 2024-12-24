@@ -1,9 +1,13 @@
+:root{
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.1rem;
+  font-family: "Sora", serif;
 }
 
 a:hover {
@@ -30,3 +34,9 @@ a:hover {
   color: black;
   border: 2px solid black;
 }
+/* #root {
+  background-image: url("./assets/Images/black-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
