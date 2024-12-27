@@ -8,8 +8,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full h-20 sticky top-0 z-50 bg-black">
-      <div className="md:w-2/3 max-md:w-[90%] flex align-middle sm:justify-center justify-end h-full m-auto sm:px-3">
+    <header className="w-full h-20 sticky top-0 z-50 bg-[#391e6f] bg sm:bg-gradient-to-l from-[#391e6f] via-[#321a62] from-30% to-80% to-black">
+      <div className="md:w-2/3 max-md:w-[100%] flex align-middle sm:justify-center justify-end h-full m-auto sm:px-3">
         <div
           className={`w-full m-auto flex max-sm:flex-col sm:h-full  sm:align-middle sm:justify-center sm:text-white ${
             !isMenuOpen

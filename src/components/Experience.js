@@ -30,13 +30,14 @@ function Image3D() {
 
 const Experience = () => {
   return (
-    <section
-      // id="Experience"
-      className="md:mx-2 md:h-screen max-sm:top-20 max-sm:px-2 md:px-8 max-sm:mt-20 max-md:mx-3"
-    >
+    <section className="md:mx-2 md:h-screen max-sm:top-20 max-sm:px-2 md:px-8 max-sm:mt-20 max-md:mx-3 ">
       <div className=" flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto md:px-3 ">
         {/* <h1 className="text-4xl font-semibold font-sans">Experience</h1> */}
-        <h2 className={`${styles.sectionHeadText} text-center`}>Experience</h2>
+        <h2
+          className={`${styles.sectionHeadText}  font-bold  bg-gradient-to-r from-[#7540df] from-30%  to-white bg-clip-text text-transparent`}
+        >
+          Experience
+        </h2>
         <div className="w-full flex h-5/6 sm:align-bottom sm:mt-5 max-sm:mt-5 max-sm:flex-col md:gap-5 max-md:gap-2">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}

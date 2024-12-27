@@ -68,7 +68,11 @@ const Education = () => {
         {/* <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p> */}
-        <h2 className={`${styles.sectionHeadText} text-center`}>Education</h2>
+        <h2
+          className={`${styles.sectionHeadText} bg-gradient-to-r md:mx-16 from-[#7540df] from-30%  to-white bg-clip-text text-transparent`}
+        >
+          Education
+        </h2>
       </motion.div>
 
       <div className="mt-5 flex flex-col max-md:mx-4">
