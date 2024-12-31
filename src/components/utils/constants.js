@@ -7,6 +7,7 @@ import Tailwind from "../../assets/Images/Skills/tailwind-css-icon.svg";
 import Java from "../../assets/Images/Skills/java-icon.svg";
 import SpringBoot from "../../assets/Images/Skills/spring-icon.svg";
 import GitHub from "../../assets/Images/Skills/github-icon.svg";
+import projectImg from "../../assets/Images/experince_logo.jpg";
 
 export const skills = [
   {
@@ -123,5 +124,14 @@ export const education = [
     date: "2013",
     initials: "10th",
     percent: "7.8 CGPA",
+  },
+];
+
+export const projectDetails = [
+  {
+    title: "Title",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+    img: projectImg,
   },
 ];

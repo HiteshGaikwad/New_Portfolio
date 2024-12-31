@@ -7,13 +7,14 @@ import Hero1 from "./components/Hero1";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import StarsCanvas from "./components/utils/Star";
 
 function App() {
   return (
     <>
       {/* bg-[url('./assets/Images/gif/earth-giphy.webp')] */}
-      <div className=" bg-no-repeat bg-center bg-cover w-screen h-screen fixed top-0 right-0 "></div>
-      <div className="w-full   relative pb-7 z-50 ">
+      <div className=" bg-no-repeat bg-center bg-cover w-screen h-screen fixed top-0 right-0 bg-black"></div>
+      <div className="w-full relative pb-7 z-50 ">
         {/* <div> */}
         <Navbar />
         {/* <Hero /> */}
@@ -22,7 +23,10 @@ function App() {
         <Projects />
         <Skills />
         <Education />
-        <Contact />
+        <div className="relative z-0">
+          <Contact />
+          {/* <StarsCanvas /> */}
+        </div>
         {/* </div> */}
       </div>
     </>

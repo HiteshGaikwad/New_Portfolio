@@ -8,21 +8,20 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full h-20 sticky top-0 z-50 bg-[#391e6f] bg sm:bg-gradient-to-l from-[#391e6f] via-[#321a62] from-30% to-80% to-black">
-      <div className="md:w-2/3 max-md:w-[100%] flex align-middle sm:justify-center justify-end h-full m-auto sm:px-3">
+    <header className="w-full h-20 md:sticky max-sm:fixed md:top-0  z-50  bg-gradient-to-r from-[#391e6f] via-[#321a62] from-30% to-80% to-[#321a62] md:to-transparent">
+      <div className="md:w-2/3 max-md:w-[100%] flex align-middle sm:justify-center justify-end h-full m-auto sm:px-3 ">
         <div
           className={`w-full m-auto flex max-sm:flex-col sm:h-full  sm:align-middle sm:justify-center sm:text-white ${
             !isMenuOpen
               ? "max-sm:hidden"
-              : "max-sm:flex max-sm:absolute max-sm:bg-white max-sm:top-20 max-sm:text-black max-sm:w-full max-sm:h-screen "
+              : "max-sm:flex max-sm:overflow-y-hidden max-sm:absolute max-sm:bg-white max-sm:top-20 max-sm:text-black max-sm:w-full max-sm:h-screen "
           }`}
         >
-          <div
+          {/* <div
             className=" sm:hidden fixed z-50 right-5 top-24"
             title="Download Resume"
           >
             {" "}
-            {/* Download Resume */}
             <a
               href="https://drive.google.com/uc?export=download&id=196V8Tc2kxoYidpVsg1ZkgA0yxarr2zgv"
               download="HiteshGaikwad-resume"
@@ -34,7 +33,7 @@ const Navbar = () => {
                 className="w-14 h-14 drop-shadow-[5px_5px_8px_white] animate-bounce"
               />
             </a>
-          </div>
+          </div> */}
           <ul
             className={`sm:text-white sm:w-full max-md:w-4/5 lg:w-full sm:flex sm:justify-between sm:align-middle m-auto  
                 ${

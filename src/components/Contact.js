@@ -6,6 +6,7 @@ import { styles } from "./style";
 import EarthCanvas from "./utils/earth";
 import SectionWrapper from "./hoc/SectionWrapper";
 import { slideIn } from "./utils/motion";
+import StarsCanvas from "./utils/Star";
 
 const Contact = () => {
   const formRef = useRef();
@@ -66,17 +67,19 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-5 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden max-md:mx-4`}
+      className={` flex xl:flex-row flex-col-reverse gap-5 overflow-hidden max-md:mx-4 bg-black md:mt-[-25px] text-white md:px-8 relative pb-5`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 sm:p-8 rounded-2xl"
+        className="flex-[0.75] bg-black-100 sm:p-4 rounded-2xl  max-sm:pl-2"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3
           className={`${styles.sectionHeadText} bg-gradient-to-r from-[#7540df] from-30%  to-white bg-clip-text text-transparent`}
         >
-          Contact.
+          <span className="bg-gradient-to-r from-[#7540df] from-20% to-white bg-clip-text text-transparent">
+            Contact.{" "}
+          </span>
         </h3>
 
         <form
@@ -92,7 +95,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium text-black"
             />
           </label>
           <label className="flex flex-col">
@@ -103,7 +106,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium text-black"
             />
           </label>
           <label className="flex flex-col">
@@ -114,13 +117,13 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium text-black"
             />
           </label>
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit  font-bold shadow-md shadow-primary"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-md shadow-gray-400"
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -133,6 +136,9 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+      <div className="absolute h-full w-full top-0 z-40">
+        <StarsCanvas />
+      </div>
     </div>
   );
 };

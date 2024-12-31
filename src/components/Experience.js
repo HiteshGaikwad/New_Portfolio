@@ -30,18 +30,23 @@ function Image3D() {
 
 const Experience = () => {
   return (
-    <section className="md:mx-2 md:h-screen max-sm:top-20 max-sm:px-2 md:px-8 max-sm:mt-20 max-md:mx-3 ">
+    <section
+      className=" md:h-screen max-sm:top-20 max-sm:px-2 md:px-16 max-sm:mt-20 max-md:mx-3 text-white bg-black"
+      // style={{
+      //   background: "radial-gradient(circle, #341b65 0%, black 90%) ",
+      // }}
+    >
       <div className=" flex flex-col align-middle justify-center sm:justify-center sm:h-full m-auto md:px-3 ">
         {/* <h1 className="text-4xl font-semibold font-sans">Experience</h1> */}
-        <h2
-          className={`${styles.sectionHeadText}  font-bold  bg-gradient-to-r from-[#7540df] from-30%  to-white bg-clip-text text-transparent`}
-        >
-          Experience
+        <h2 className={`${styles.sectionHeadText}  font-bold md:pb-5`}>
+          <span className="bg-gradient-to-r from-[#7540df] from-20%  to-white bg-clip-text text-transparent  ">
+            Experience
+          </span>
         </h2>
-        <div className="w-full flex h-5/6 sm:align-bottom sm:mt-5 max-sm:mt-5 max-sm:flex-col md:gap-5 max-md:gap-2">
+        <div className="w-full flex h-5/6 sm:align-bottom  max-sm:mt-5 max-sm:flex-col md:gap-5 max-md:gap-2">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className="sm:w-1/2 max-sm:w-full max-sm:px-3  py-3 px-2"
+            className="sm:w-1/2 max-sm:w-full max-sm:px-3  py-3 px-2 "
           >
             <h2 className="flex text-center gap-2 font-semibold md:text-xl ">
               {/* <MdOutlineCorporateFare className="text-xl " />  */}
@@ -84,12 +89,15 @@ const Experience = () => {
           </motion.div>
           <motion.div
             variants={slideIn("right", "tween", 0.2, 1)}
-            className="md:w-[40%] max-md:w-1/2 max-sm:w-full max-sm:px-3 max-md:pt-10 max-sm:pt-1  md:py-3 px-2"
+            className="md:w-[40%] max-md:w-1/2 max-sm:w-full max-sm:px-3 max-md:pt-10 max-sm:pt-1  md:py-3 px-2  "
           >
             <img
-              className="sm:w-full w-32 max-sm:w-full max-sm:h-72  sm:h-[70%] rounded-lg"
+              className="sm:w-full w-32 max-sm:w-full max-sm:h-72  sm:h-[70%] rounded-xl filter grayscale hover:filter-none hover:scale-105 transition-all ease-linear "
               src={experince_logo}
               alt="experince logo"
+              // style={{
+              //   filter: "grayscale(100%)",
+              // }}
             />
           </motion.div>
         </div>

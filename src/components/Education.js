@@ -64,18 +64,22 @@ const ExperienceCard = ({ item }) => {
 const Education = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="mt-5 max-md:mx-4">
+      <motion.div
+        variants={textVariant()}
+        className=" max-md:mx-4 bg-black md:mt-[-25px] md:px-8 "
+      >
         {/* <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p> */}
-        <h2
-          className={`${styles.sectionHeadText} bg-gradient-to-r md:mx-16 from-[#7540df] from-30%  to-white bg-clip-text text-transparent`}
-        >
-          Education
+        <h2 className={`${styles.sectionHeadText}  md:mx-16  `}>
+          {" "}
+          <span className="bg-gradient-to-r from-[#7540df] from-20% max-sm:pl-2 to-white bg-clip-text text-transparent">
+            Education
+          </span>
         </h2>
       </motion.div>
 
-      <div className="mt-5 flex flex-col max-md:mx-4">
+      <div className="flex flex-col max-md:mx-4 bg-black  md:pb-16">
         <VerticalTimeline>
           {education.map((item, index) => (
             <ExperienceCard key={`education-${index}`} item={item} />
