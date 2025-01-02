@@ -9,6 +9,17 @@ import SpringBoot from "../../assets/Images/Skills/spring-icon.svg";
 import GitHub from "../../assets/Images/Skills/github-icon.svg";
 import projectImg from "../../assets/Images/experince_logo.jpg";
 
+import YouTubeThumbnail from "../../assets/Images/Thumbnails/YouTubeTumbnail.jpg";
+import FoodHubThumbnail from "../../assets/Images/Thumbnails/FoodHubThumbnail.jpg";
+import EBazaarThumbnail from "../../assets/Images/Thumbnails/EBazaarThumbnail.jpg";
+import BondsThumbnail from "../../assets/Images/Thumbnails/bonds-thumbnail.png";
+import CFOThumbnail from "../../assets/Images/Thumbnails/cfo-thumbnail.png";
+
+import foodhubLogo from "../../assets/Images/ProjectLogo/foodhub.webp";
+import EbazaarLogo from "../../assets/Images/ProjectLogo/eBazaarLogo.png";
+import YouTubeLogo from "../../assets/Images/ProjectLogo/YouTubeLogo.webp";
+import motilalLogo from "../../assets/Images/ProjectLogo/motilal-logo.jpg";
+
 export const skills = [
   {
     name: "HTML",
@@ -129,9 +140,50 @@ export const education = [
 
 export const projectDetails = [
   {
-    title: "Title",
+    title: "CFO",
+    LiveLink: "",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-    img: projectImg,
+      "CFO(Chief Financial Officer) is a MOSL's internal application",
+    img: CFOThumbnail,
+    techStack: ["HTML", "CSS", "Javascript", "React", "bootstrap"],
+    logo: motilalLogo,
+  },
+  {
+    title: "Bonds",
+    LiveLink: "",
+    description:
+      "This is a MOSL's internal application to publish and unpublish bonds in the market.",
+    img: BondsThumbnail,
+    techStack: ["HTML", "CSS", "Javascript", "React", "bootstrap"],
+    logo: motilalLogo,
+  },
+
+  {
+    title: "YouTube Clone",
+    LiveLink: "https://you-tube-hiteshgaikwad.vercel.app",
+    // img: "https://drive.google.com/thumbnail?id=1CY9DmgmvnBK3YVoDiYC28Hdy7GZeizJE",
+    img: YouTubeThumbnail,
+    techStack: ["HTML", "CSS", "Javascript", "React", "Redux", "Tailwind"],
+    description: "This is a YouTube clone where you can watch the videos.",
+    logo: YouTubeLogo,
+  },
+  {
+    title: "FoodHub",
+    LiveLink: "https://food-hub-hiteshgaikwad.vercel.app",
+    // img: "https://drive.google.com/thumbnail?id=1CXlVYc3nBbXPE1LGUP4lMv_tSzyqUjN6",
+    img: FoodHubThumbnail,
+    techStack: ["HTML", "CSS", "Javascript", "React", "Redux", "Tailwind"],
+    description: "This is a food ordering application.",
+    logo: foodhubLogo,
+  },
+  {
+    title: "E-Bazaar",
+    LiveLink: "https://hiteshgaikwad.github.io/Ecommerce-website",
+    // img: "https://drive.google.com/thumbnail?id=1DGdvSnNRka7Xzbm3GldMcEQjvsEzdZBQ",
+    img: EBazaarThumbnail,
+    techStack: ["HTML", "CSS", "Javascript", "React", "Redux", "Tailwind"],
+    description:
+      "This is a E-Commerce website where you can explore various product to buy.",
+    logo: EbazaarLogo,
   },
 ];

@@ -42,7 +42,7 @@ const Hero1 = () => {
               <ul className="flex gap-4">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/hitesh-gaikwad"
                     className="group relative inline-block"
                     target="_blank"
                     rel="noreferrer"

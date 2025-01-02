@@ -4,7 +4,7 @@ import { styles } from "./style";
 import SectionWrapper from "./hoc/SectionWrapper";
 import { projectDetails } from "./utils/constants";
 
-const Projects = () => {
+const Projects = React.memo(() => {
   return (
     <section
       className="max-sm:mt-1 max-md:mx-2 max-sm:px-2 md:px-16 md:pb-20  md:mt-[-25px] text-white bg-black"
@@ -24,7 +24,7 @@ const Projects = () => {
         </h2>
         <div className="w-full h-full mt-5  flex flex-1 gap-8 flex-wrap justify-evenly sm:px-5 ">
           {projectDetails.map((project) => {
-            return <ProjectCard project={project} />;
+            return <ProjectCard key={project?.title} project={project} />;
           })}
 
           {/* <ProjectCard />
@@ -36,6 +36,6 @@ const Projects = () => {
       <div id="Skills"></div>
     </section>
   );
-};
+});
 
 export default SectionWrapper(Projects, "projects");
