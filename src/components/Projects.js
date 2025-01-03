@@ -22,7 +22,7 @@ const Projects = React.memo(() => {
             Projects{" "}
           </span>
         </h2>
-        <div className="w-full h-full mt-5  flex flex-1 gap-8 flex-wrap justify-evenly sm:px-5 ">
+        <div className="w-full h-full mt-5  flex flex-1 gap-5 md:gap-8 flex-wrap justify-evenly sm:px-5 ">
           {projectDetails.map((project) => {
             return <ProjectCard key={project?.title} project={project} />;
           })}

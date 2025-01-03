@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
     }
   };
   return (
-    <Tilt className="grayscale hover:grayscale-0 shadow-md shadow-[#a882f4] rounded-xl bg-gradient-to-b from-[#6135ba] from-10% md:w-72 max-md:w-[45%] max-sm:h-[250px] max-md:h-[280px] sm:h-[320px] px-2 pb-2 pt-1">
+    <Tilt className="grayscale hover:grayscale-0 shadow-md shadow-[#a882f4] rounded-xl bg-gradient-to-b from-[#6135ba] from-10% md:w-72 max-md:w-[47%] max-sm:h-[280px] max-md:h-[280px] sm:h-[320px] px-2 pb-2 pt-1">
       <motion.div variants={fadeIn("right", "spring", 0.2, 0.75)}>
         {/* <a
           href={project?.LiveLink}

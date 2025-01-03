@@ -67,7 +67,7 @@ const Contact = () => {
 
   return (
     <div
-      className={` flex xl:flex-row flex-col-reverse gap-5 overflow-hidden max-md:mx-4 bg-black md:mt-[-25px] text-white md:px-8 relative pb-5`}
+      className={` flex xl:flex-row flex-col-reverse gap-5 overflow-hidden max-md:mx-4  md:mt-[-25px] text-white md:px-8 relative pb-5`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -136,9 +136,9 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
-      <div className="absolute h-full w-full top-0 z-40">
-        <StarsCanvas />
-      </div>
+      {/* <div className="absolute h-full w-full top-0 "> */}
+      {/* <StarsCanvas /> */}
+      {/* </div> */}
     </div>
   );
 };

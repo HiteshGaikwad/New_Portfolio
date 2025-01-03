@@ -31,6 +31,7 @@ function Image3D() {
 const Experience = () => {
   return (
     <section
+      // id="Experience"
       className=" md:h-screen max-sm:top-20 max-sm:px-2 md:px-16 max-sm:mt-20 max-md:mx-3 text-white bg-black"
       // style={{
       //   background: "radial-gradient(circle, #341b65 0%, black 90%) ",
@@ -69,7 +70,7 @@ const Experience = () => {
               <FaMapPin className="md:text-2xl max-md:text-xl md:mx-2" />
               <span className="max-md:text-[14px]">March 2024 - Present </span>
             </h4>
-            <ul className="list-disc pl-2 pt-2 max-md:text-[13px]">
+            <ul className="list-disc pl-2 pt-5 max-md:text-[13px] text-[15px]">
               <li>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's.
