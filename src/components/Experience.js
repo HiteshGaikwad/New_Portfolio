@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { slideIn } from "./utils/motion";
 import { styles } from "./style";
 import we3_logo from "../assets/Images/we3_icon.png";
-import we3_icon from "../assets/Images/we3_logo.png";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { TextureLoader, LinearFilter, LinearMipMapLinearFilter } from "three";
 import { OrbitControls } from "@react-three/drei";

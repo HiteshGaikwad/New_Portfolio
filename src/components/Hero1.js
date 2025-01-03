@@ -1,5 +1,4 @@
 import React from "react";
-import insta from "../assets/Images/instagram.png";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithub } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
