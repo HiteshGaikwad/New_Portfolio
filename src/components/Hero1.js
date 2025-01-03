@@ -15,7 +15,7 @@ const Hero1 = () => {
         className=" md:h-screen sm:bg-gradient-to-bl bg-gradient-to-b sm:pt-[5%] from-[#391e6f] from-10% to-50% to-black flex max-sm:flex-col sm:gap-2 md:gap-3 relative max-sm:top-20 max-sm:px-3 md:pl-10 xl:pl-20 md:pr-12 "
       >
         {/* left */}
-        <div className=" sm:w-[58%] sm:h-[80%] md:h-[95%] md:gap-5 flex flex-col md:mt-15 max-md:mt-20 mt-5">
+        <div className=" sm:w-[58%] sm:h-[80%] md:h-[95%] md:gap-5 flex flex-col md:mt-20 max-md:mt-20 mt-5">
           <div className="md:text-4xl text-2xl font-bold text-white">
             I am Hitesh
           </div>
@@ -41,7 +41,7 @@ const Hero1 = () => {
             />
           </div>
 
-          <div className="text-white text-[16px] max-sm:text-sm w-full max-sm:mb-5 lg:w-[550px] md:font-extralight">
+          <div className="text-white text-[15px] max-sm:text-sm w-full max-sm:mb-5 lg:w-[550px] md:font-extralight">
             I'm a passionate Software Developer with expertise in HTML, CSS,
             Javascript, React, Typescript, Tailwind CSS, NextJS, Bootstrap,
             Material UI, Java. <br /> I specialize in building efficient,
