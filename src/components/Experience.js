@@ -31,7 +31,7 @@ const Experience = () => {
   return (
     <section
       // id="Experience"
-      className=" md:h-screen max-sm:top-20 max-sm:px-2 md:px-16 max-sm:mt-20 max-md:mx-3 text-white bg-black mb-2"
+      className=" md:h-screen max-sm:top-20 max-sm:px-2 md:px-16 max-sm:mt-20  text-white bg-black mb-2"
       // style={{
       //   background: "radial-gradient(circle, #341b65 0%, black 90%) ",
       // }}
@@ -43,13 +43,13 @@ const Experience = () => {
             Experience
           </span>
         </h2>
-        <div className="w-full flex h-5/6 sm:align-bottom  max-sm:mt-5 max-sm:flex-col md:gap-5 max-md:gap-2 max-sm:gap-8 ml-10  ">
+        <div className="w-full flex h-5/6 sm:align-bottom  max-sm:mt-5 max-sm:flex-col md:gap-5 max-md:gap-2 max-sm:gap-16 ml-10  ">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className="sm:w-1/2 max-sm:w-full max-sm:px-3 py-3 px-2 relative perspective-distant"
+            className="sm:w-1/2 max-sm:w-[90%] max-sm:px-3 py-3 px-2 relative perspective-distant"
           >
             {/* Background Element */}
-            <div className="border border-[#7540df] bg-gradient-to-r from-[#7540df] to-[#d14aec] rounded-[100px]  absolute xl:min-w-[560px] sm:min-w-[450px] max-sm:w-full max-sm:px-3 py-3 px-2 sm:h-[430px] max-sm:min-h-[400px] xl:h-[450px] ml-[-25px] shadow-[0px_4px_20px_rgba(0,0,0,0.4)] scale-105 z-10"></div>
+            <div className="border border-[#7540df] bg-gradient-to-r from-[#7540df] to-[#d14aec] rounded-[100px]  absolute xl:min-w-[560px] sm:min-w-[450px] max-sm:w-full max-sm:px-3 py-3 px-2 sm:h-[430px] max-sm:min-h-[540px] xl:h-[450px] ml-[-25px] shadow-[0px_4px_20px_rgba(0,0,0,0.4)] scale-105 z-10"></div>
 
             {/* Foreground Content */}
             <h2 className="flex text-center gap-2 font-semibold md:text-xl z-50 relative">
@@ -102,7 +102,7 @@ const Experience = () => {
 
           <motion.div
             variants={slideIn("right", "tween", 0.2, 1)}
-            className="md:w-[40%] max-md:w-1/2 max-sm:w-full max-sm:px-1 max-md:pt-10 max-sm:pt-1  md:py-3 px-2  "
+            className="md:w-[40%] max-md:w-1/2 max-sm:w-[90%] max-sm:px-1 max-md:pt-10 max-sm:pt-1  md:py-3 px-2  "
           >
             <img
               className="sm:w-full w-32 max-sm:w-full max-sm:h-72  sm:h-[80%] rounded-[80px] filter grayscale hover:filter-none hover:scale-105 transition-all ease-linear "

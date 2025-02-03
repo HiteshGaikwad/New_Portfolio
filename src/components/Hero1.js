@@ -34,7 +34,7 @@ const Hero1 = () => {
 
           <div className="sm:hidden mx-auto">
             <img
-              src="https://gerold.themejunction.net/wp-content/uploads/2024/05/hero_img.jpg"
+              src={profile}
               alt="profile-photo"
               className="md:w-[438px] w-[250px] my-8 rounded-3xl border border-[#3e1c81] sm:translate-x-5 rotate-[4deg] hover:rotate-0 duration-500 ease-in-out hover:border-[#723cde] hover:border-2"
             />

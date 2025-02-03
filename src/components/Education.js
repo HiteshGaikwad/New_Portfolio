@@ -66,7 +66,7 @@ const Education = () => {
     <>
       <motion.div
         variants={textVariant()}
-        className=" max-md:mx-4 bg-black md:mt-[-25px] md:px-8 "
+        className=" bg-black md:mt-[-25px] md:px-8 "
       >
         {/* <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
@@ -79,7 +79,7 @@ const Education = () => {
         </h2>
       </motion.div>
 
-      <div className="flex flex-col max-md:mx-4 bg-black  md:pb-16">
+      <div className="flex flex-col bg-black  md:pb-16">
         <VerticalTimeline>
           {education.map((item, index) => (
             <ExperienceCard key={`education-${index}`} item={item} />

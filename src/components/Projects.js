@@ -7,7 +7,7 @@ import { projectDetails } from "./utils/constants";
 const Projects = React.memo(() => {
   return (
     <section
-      className="max-sm:mt-1 max-md:mx-2 max-sm:px-2 md:px-16 md:pb-20  md:mt-[-25px] text-white bg-black"
+      className="max-sm:mt-1 max-sm:px-2 md:px-16 md:pb-20  md:mt-[-25px] text-white bg-black"
       // style={{
       //   background: "radial-gradient(circle, #341b65 0%, black 90%) ",
       // }}
