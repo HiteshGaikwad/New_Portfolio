@@ -29,6 +29,11 @@ const ProjectCard = ({ project }) => {
           rel="noreferrer"
         > */}
         <div
+          title={
+            project?.LiveLink === ""
+              ? "Cannot view the live project"
+              : "Click to view the live project"
+          }
           onClick={() => handleClick(project?.LiveLink)}
           options={{
             max: 45,

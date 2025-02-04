@@ -34,22 +34,22 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        import.meta.process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Hitesh",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "gaikwadhitesh03@gmail.com",
           message: form.message,
         },
-        import.meta.process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
           setForm({
             name: "",
             email: "",

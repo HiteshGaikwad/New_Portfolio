@@ -143,7 +143,7 @@ export const projectDetails = [
     title: "CFO",
     LiveLink: "",
     description:
-      "CFO(Chief Financial Officer) is a MOSL's internal application",
+      "CFO(Chief Financial Officer) is a MOFSL's internal reports management application.",
     img: CFOThumbnail,
     techStack: ["HTML", "CSS", "Javascript", "React", "bootstrap"],
     logo: motilalLogo,
@@ -152,7 +152,7 @@ export const projectDetails = [
     title: "Bonds",
     LiveLink: "",
     description:
-      "This is a MOSL's internal application to publish and unpublish bonds in the market.",
+      "This is a MOFSL's internal application to publish and unpublish bonds in the market.",
     img: BondsThumbnail,
     techStack: ["HTML", "CSS", "Javascript", "React", "bootstrap"],
     logo: motilalLogo,
@@ -169,7 +169,7 @@ export const projectDetails = [
   },
   {
     title: "FoodHub",
-    LiveLink: "https://food-hub-hiteshgaikwad.vercel.app",
+    LiveLink: "https://food-hub-eight-liart.vercel.app",
     // img: "https://drive.google.com/thumbnail?id=1CXlVYc3nBbXPE1LGUP4lMv_tSzyqUjN6",
     img: FoodHubThumbnail,
     techStack: ["HTML", "CSS", "Javascript", "React", "Redux", "Tailwind"],
