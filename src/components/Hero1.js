@@ -5,13 +5,14 @@ import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
 import Typewriter from "typewriter-effect";
 import profile from "../assets/Images/profile.jpg";
+import { Link } from "react-router-dom";
 
 const Hero1 = () => {
   return (
     <>
       <div
         id="Home"
-        className=" md:h-screen sm:bg-gradient-to-bl bg-gradient-to-b sm:pt-[5%] from-[#391e6f] from-10% to-50% to-black flex max-sm:flex-col sm:gap-2 md:gap-3 relative max-sm:top-20 max-sm:px-3 md:pl-10 xl:pl-20 md:pr-12 "
+        className=" animated-element md:h-screen sm:bg-gradient-to-bl bg-gradient-to-b sm:pt-[5%] from-[#391e6f] from-10% to-50% to-black flex max-sm:flex-col sm:gap-2 md:gap-3 relative max-sm:top-20 max-sm:px-3 md:pl-10 xl:pl-20 md:pr-12 "
       >
         {/* left */}
         <div className=" sm:w-[58%] sm:h-[80%] md:h-[95%] md:gap-5 flex flex-col md:mt-20 max-md:mt-20 mt-5">
@@ -49,15 +50,17 @@ const Hero1 = () => {
           </div>
           <div className="flex max-sm:flex-col md:gap-4 gap-4 sm:items-center md:mt-8">
             <button className="border border-[#8750f7] rounded-full py-3 px-7 max-sm:w-52 md:py-4 md:px-9 text-[#8750f7] hover:bg-[#8750f7] hover:text-white transition-colors duration- ease-in-out">
-              <a
-                href="https:drive.google.com/file/d/1xOu57DHs76P5T0QYi5CooEq3cleYyPQf/view?usp=drivesdk"
-                target="_blank"
-                rel="noreferrer"
-                download={"HiteshGaikwad"}
+              <Link
+                to={
+                  "https:drive.google.com/uc?export=download&id=1xOu57DHs76P5T0QYi5CooEq3cleYyPQf"
+                }
+                target="_self"
+                rel="noopener noreferrer"
                 className="hover:text-white hover:no-underline"
+                download
               >
                 Download CV
-              </a>
+              </Link>
             </button>
 
             <div className="flex md:gap-4">

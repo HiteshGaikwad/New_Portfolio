@@ -22,16 +22,16 @@ import motilalLogo from "../../assets/Images/ProjectLogo/motilal-logo.jpg";
 
 export const skills = [
   {
+    name: "Javascript",
+    icon: Javascript,
+  },
+  {
     name: "HTML",
     icon: HTML,
   },
   {
     name: "CSS",
     icon: CSS,
-  },
-  {
-    name: "Javascript",
-    icon: Javascript,
   },
   {
     name: "ReactJS",

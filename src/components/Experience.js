@@ -43,7 +43,7 @@ const Experience = () => {
             Experience
           </span>
         </h2>
-        <div className="w-full flex h-5/6 sm:align-bottom  max-sm:mt-5 max-sm:flex-col md:gap-5 max-md:gap-2 max-sm:gap-16 ml-10  ">
+        <div className=" animated-element w-full flex h-5/6 sm:align-bottom  max-sm:mt-5 max-sm:flex-col md:gap-5 max-md:gap-2 max-sm:gap-16 ml-10  ">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
             className="sm:w-1/2 max-sm:w-[90%] max-sm:px-3 py-3 px-2 relative perspective-distant"
