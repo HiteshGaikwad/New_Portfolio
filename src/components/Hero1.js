@@ -8,6 +8,15 @@ import profile from "../assets/Images/profile.jpg";
 import { Link } from "react-router-dom";
 
 const Hero1 = () => {
+  const handleDownload = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href =
+      "https://drive.google.com/uc?export=download&id=1xOu57DHs76P5T0QYi5CooEq3cleYyPQf";
+    downloadLink.target = "_blank"; // Ensures mobile compatibility
+    downloadLink.rel = "noopener noreferrer";
+    downloadLink.click();
+  };
+
   return (
     <>
       <div
@@ -49,18 +58,19 @@ const Hero1 = () => {
             design.
           </div>
           <div className="flex max-sm:flex-col md:gap-4 gap-4 sm:items-center md:mt-8">
-            <button className="border border-[#8750f7] rounded-full py-3 px-7 max-sm:w-52 md:py-4 md:px-9 text-[#8750f7] hover:bg-[#8750f7] hover:text-white transition-colors duration- ease-in-out">
-              <Link
-                to={
-                  "https:drive.google.com/uc?export=download&id=1xOu57DHs76P5T0QYi5CooEq3cleYyPQf"
-                }
-                target="_self"
+            <button
+              onClick={handleDownload}
+              className="border border-[#8750f7] rounded-full py-3 px-7 max-sm:w-52 md:py-4 md:px-9 text-[#8750f7] hover:bg-[#8750f7] hover:text-white transition-colors duration- ease-in-out"
+            >
+              {/* <a
+                href="https:drive.google.com/uc?export=download&id=1xOu57DHs76P5T0QYi5CooEq3cleYyPQf"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white hover:no-underline"
                 download
-              >
-                Download CV
-              </Link>
+              > */}
+              Download CV
+              {/* </a> */}
             </button>
 
             <div className="flex md:gap-4">

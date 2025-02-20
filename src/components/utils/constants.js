@@ -7,7 +7,6 @@ import Tailwind from "../../assets/Images/Skills/tailwind-css-icon.svg";
 import Java from "../../assets/Images/Skills/java-icon.svg";
 import SpringBoot from "../../assets/Images/Skills/spring-icon.svg";
 import GitHub from "../../assets/Images/Skills/github-icon.svg";
-import projectImg from "../../assets/Images/experince_logo.jpg";
 
 import YouTubeThumbnail from "../../assets/Images/Thumbnails/YouTubeTumbnail.jpg";
 import FoodHubThumbnail from "../../assets/Images/Thumbnails/FoodHubThumbnail.jpg";
@@ -22,9 +21,10 @@ import motilalLogo from "../../assets/Images/ProjectLogo/motilal-logo.jpg";
 
 export const skills = [
   {
-    name: "Javascript",
-    icon: Javascript,
+    name: "",
+    icon: "",
   },
+
   {
     name: "HTML",
     icon: HTML,
@@ -32,6 +32,10 @@ export const skills = [
   {
     name: "CSS",
     icon: CSS,
+  },
+  {
+    name: "Javascript",
+    icon: Javascript,
   },
   {
     name: "ReactJS",

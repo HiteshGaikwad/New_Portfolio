@@ -21,13 +21,15 @@ const Skills = () => {
         <div className="flex flex-row flex-wrap justify-center mt-7 gap-10">
           {skills?.map((technology) => {
             return (
-              <div
-                className="sm:w-28 sm:h-28 max-sm:w-20 max-sm:h-20"
-                key={technology.name}
-                title={technology.name}
-              >
-                <BallCanvas icon={technology.icon} />
-              </div>
+              technology?.icon && (
+                <div
+                  className="sm:w-28 sm:h-28 max-sm:w-20 max-sm:h-20"
+                  key={technology?.name}
+                  title={technology?.name}
+                >
+                  {technology?.icon && <BallCanvas icon={technology?.icon} />}
+                </div>
+              )
             );
           })}
         </div>

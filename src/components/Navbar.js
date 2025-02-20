@@ -43,33 +43,57 @@ const Navbar = () => {
             `}
           >
             <li>
-              <a href="#Home" onClick={() => setIsMenuOpen(false)}>
+              <a
+                href="#Home"
+                className="hover:no-underline"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 {" "}
                 Home
               </a>
             </li>
             <li>
-              <a href="#Experience" onClick={() => setIsMenuOpen(false)}>
+              <a
+                className="hover:no-underline"
+                href="#Experience"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Experience
               </a>
             </li>
             <li>
-              <a href="#Projects" onClick={() => setIsMenuOpen(false)}>
+              <a
+                className="hover:no-underline"
+                href="#Projects"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="#Skills" onClick={() => setIsMenuOpen(false)}>
+              <a
+                className="hover:no-underline"
+                href="#Skills"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Skills
               </a>
             </li>
             <li>
-              <a href="#Education" onClick={() => setIsMenuOpen(false)}>
+              <a
+                className="hover:no-underline"
+                href="#Education"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Education
               </a>
             </li>
             <li>
-              <a href="#Contact" onClick={() => setIsMenuOpen(false)}>
+              <a
+                className="hover:no-underline"
+                href="#Contact"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact
               </a>
             </li>
