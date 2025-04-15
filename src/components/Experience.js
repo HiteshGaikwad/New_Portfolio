@@ -71,7 +71,7 @@ const Experience = () => {
             <h4 className="flex gap-2 mt-2 max-md:mx-1 text-white z-50 relative">
               <FaMapPin className="md:text-2xl max-md:text-xl md:mx-2 z-50" />
               <span className="max-md:text-[14px] z-50">
-                March 2024 - Present{" "}
+                January 2023 - Present{" "}
               </span>
             </h4>
             <ul className="list-disc pl-2 pt-5 max-md:text-[13px] text-[15px] text-white relative z-50">
