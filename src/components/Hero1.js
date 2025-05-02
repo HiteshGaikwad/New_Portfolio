@@ -11,7 +11,7 @@ const Hero1 = () => {
   const handleDownload = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href =
-      "https://drive.google.com/uc?export=download&id=1xOu57DHs76P5T0QYi5CooEq3cleYyPQf";
+      "https://drive.google.com/file/d/1SLfmDR9rgIBgky8x_gRRVGFCHXfDeKPY/view?usp=drivesdk";
     downloadLink.target = "_blank"; // Ensures mobile compatibility
     downloadLink.rel = "noopener noreferrer";
     downloadLink.click();
